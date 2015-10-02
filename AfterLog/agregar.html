@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head lang = "es">
+
+		<meta charset="UTF-8"/>
+		<!--<meta http-equiv="refresh" content="5" >-->
+		<link rel="stylesheet" type="text/css" href="javascript/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css"/>
+        <link rel="stylesheet" type="text/css" href="javascript/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+		<script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<script type="text/javascript" src="javascript/servicios.js"></script>
+		<script type="text/javascript" src="javascript/miScript.js"></script>
+
+		<title>App wikidictionary</title>
+	</head>
+	<body>
+		<section data-role="page" data-theme="b" id="index">
+			<header data-role="header" data-theme="a">
+				<h1>WIKIDICTIONARY</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-1)" class="ui-btn-active"  data-theme="b">HOME</a></li>
+						<li><a href="" class="disable" data-theme="b">ADD WORD</a></li>
+					</ul>
+				</div>
+			</header>
+
+			<article data-role="content">
+				
+				<form id="formAgregar" name="agregar" method="post" action="#">
+				<div class="ui-field-contain">
+    				<label for="textinput-1">Name  Object</label>
+    					<input name="textinput-1" id="textinput-2" placeholder="" value="" type="text">
+				</div>
+						<div class="ui-field-contain">
+    				<label for="textinput-1">Description</label>
+    			
+    					<textarea cols="40" rows="8" name="textAreaDescription" id="textAreaDescription" maxlength="50"></textarea>
+				</div>
+						
+					<footer for="file" data-role="footer">
+				<h1>Upload Image</h1>
+			</footer>
+						
+						<input type="file" name="file" id="file" value="">
+					
+					<input type="button" value="upload" onClick="subir()">
+					</form>
+			</article>
+
+			<footer data-role="footer">
+				<h1>UNISANGIL/PDM</h1>
+			</footer>
+		</section>
+	</body>
+</html>
